@@ -26,19 +26,6 @@
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <style type="text/css">
-        #chatmodal-body {
-          max-height: 400px;
-          overflow-y: auto;
-        }
-
-        #serverchatmodal-body {
-          max-height: 600px;
-          overflow-y: auto;
-          z-index:10000000;
-        }
-    </style>
-
 </head>
 <body>
     <?php if (isset($_SESSION['LoggedIn'])){ ?>
