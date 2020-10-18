@@ -1,13 +1,12 @@
 <?php
     session_start(); 
 
-    require_once("configuration.php");
-    require_once("php/manage/functions.php");
-
-
     if (!isset($_SESSION['LoggedIn'])){
         header("Location: login.php");
     }
+
+    require_once("configuration.php");
+    require_once("php/manage/functions.php");
     
     $connection = new PDO("mysql:dbname=".DB_NAME.";host=".HOST, USERNAME, PASSWORD);
 ?>
